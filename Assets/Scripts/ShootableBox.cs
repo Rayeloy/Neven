@@ -15,6 +15,8 @@ public class ShootableBox : MonoBehaviour {
 	public int Verde;
 	public int Naranja;
 	public int Morado;
+
+	private string animationName;
 	
 	[Header("Referencias")]
 	[SerializeField]
@@ -27,33 +29,44 @@ public class ShootableBox : MonoBehaviour {
 			if (s == "Rojo")
 			{
 				int n = Random.Range(1, Rojo + 1);
-				anim.Play("Rojo" + n.ToString());
+				animationName = "Rojo" + n.ToString();
+				anim.Play(animationName);
 			}
 			else if (s == "Azul")
 			{
 				int n = Random.Range(1, Azul + 1);
-				anim.Play("Azul" + n.ToString());
+				animationName = "Azul" + n.ToString();
+				anim.Play(animationName);
 			}
 			else if (s == "Amarillo")
 			{
 				int n = Random.Range(1, Amarillo + 1);
-				anim.Play("Amarillo" + n.ToString());
+				animationName = "Amarillo" + n.ToString();
+				anim.Play(animationName);
 			}
 			else if (s == "Verde")
 			{
 				int n = Random.Range(1, Verde + 1);
-				anim.Play("Verde" + n.ToString());
+				animationName = "Verde" + n.ToString();
+				anim.Play(animationName);
 			}
 			else if (s == "Naranja")
 			{
 				int n = Random.Range(1, Naranja + 1);
-				anim.Play("Naranja" + n.ToString());
+				animationName = "Naranja" + n.ToString();
+				anim.Play(animationName);
 			}
 			else if (s == "Morado")
 			{
 				int n = Random.Range(1, Morado + 1);
-				anim.Play("Morado" + n.ToString());
+				animationName = "Morado" + n.ToString();
+				anim.Play(animationName);
 			}
+			anim[animationName].speed = 1.0f;
+		}
+		else
+		{
+			anim[animationName].speed = 2.0f;
 		}
 	}
 }
