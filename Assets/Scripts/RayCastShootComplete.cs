@@ -8,6 +8,7 @@ public class RayCastShootComplete : MonoBehaviour {
 	public Transform gunEnd;											// Holds a reference to the gun end object, marking the muzzle location of the gun
 	public Color[] listaDeColores;
 	private int ColorActivo = 0;
+	public Animator Animator;
 
 	[Header("Referencias")]
 	public Camera fpsCam;												// Holds a reference to the first person camera
@@ -21,6 +22,7 @@ public class RayCastShootComplete : MonoBehaviour {
 		// Check if the player has pressed the fire button and if enough time has elapsed since they last fired
 		if (Input.GetButtonDown("Fire1") && Time.time > nextFire) 
 		{
+			Animator.SetTrigger("Shoot");
 			string colorUsar = numToString(ColorActivo);
 			// Update the time when our player can fire next
 			nextFire = Time.time + fireRate;
@@ -94,8 +96,12 @@ public class RayCastShootComplete : MonoBehaviour {
 				laserLine.SetPosition (1, rayOrigin + (fpsCam.transform.forward * weaponRange));
 			}
 		}
-		else if(Input.GetButtonDown("Fire2")){
+
+		if(Input.GetAxis("Mouse ScrollWheel") < 0){//(Input.GetButtonDown("Fire2")){
 			ColorActivo = (ColorActivo + 1)%3;
+		}
+		else if(Input.GetAxis("Mouse ScrollWheel") > 0){//(Input.GetButtonDown("Fire2")){
+			ColorActivo = (ColorActivo - 1)%3;
 		}
 	}
 

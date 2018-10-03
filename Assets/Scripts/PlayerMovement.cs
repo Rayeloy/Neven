@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public CameraControler myCamera;
     public Transform rotateObj;
     public MeshRenderer Body;
+    public Animator Animator;
     //public Material teamBlueMat;
     //public Material teamRedMat;
     //PlayerCombat myPlayerCombat;
@@ -127,6 +128,7 @@ public class PlayerMovement : MonoBehaviour
     {
         float horiz = Input.GetAxisRaw("Horizontal");
         float vert = -Input.GetAxisRaw("Vertical");
+        Animator.SetFloat("Speed", horiz+vert);
         print("H = " + horiz + "; V = " + vert);
         // Check that they're not BOTH zero - otherwise
         // dir would reset because the joystick is neutral.
