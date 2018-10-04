@@ -22,7 +22,7 @@ GameObject:
   m_Layer: 0
   m_Name: Prisma_Corto
   m_TagString: Untagged
-  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -37,7 +37,7 @@ GameObject:
   - component: {fileID: 33929055305035130}
   - component: {fileID: 23585320616231570}
   - component: {fileID: 65125856993280614}
-  - component: {fileID: 114157365987831624}
+  - component: {fileID: 114005298929041002}
   - component: {fileID: 111204460840098058}
   - component: {fileID: 108456536787153508}
   m_Layer: 0
@@ -185,7 +185,7 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!114 &114157365987831624
+--- !u!114 &114005298929041002
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -193,7 +193,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1384490747512248}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86ad2181e006034448e08e705f6c92fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 68c8a962c579cbb408161f97890e4d73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Rojo: 1
@@ -202,4 +202,4 @@ MonoBehaviour:
   Verde: 1
   Naranja: 1
   Morado: 1
-  anim: {fileID: 0}
+  anim: {fileID: 111204460840098058}

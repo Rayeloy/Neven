@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33709430825957050}
   - component: {fileID: 23893855870938214}
   - component: {fileID: 65718961762516994}
-  - component: {fileID: 114793323763738234}
+  - component: {fileID: 114858255138896162}
   - component: {fileID: 111892452403007714}
   - component: {fileID: 108737570787842180}
   m_Layer: 0
@@ -43,7 +43,7 @@ GameObject:
   m_Layer: 0
   m_Name: Prisma_Medio
   m_TagString: Untagged
-  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -139,7 +139,7 @@ Light:
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 0, a: 1}
   m_Intensity: 1
-  m_Range: 10
+  m_Range: 0
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -174,12 +174,17 @@ Animation:
   m_Enabled: 1
   serializedVersion: 3
   m_Animation: {fileID: 0}
-  m_Animations: []
+  m_Animations:
+  - {fileID: 7400000, guid: b23bd6ad4bd1ade4cb5a75ce756b5c81, type: 2}
+  - {fileID: 7400000, guid: 16b35de0b3e6cae4b9bf2dad9e7957c5, type: 2}
+  - {fileID: 7400000, guid: 6465ec00c56c47a40a4ffa0a6356b11e, type: 2}
+  - {fileID: 7400000, guid: fcb3cc191ffde7149b9294ed5958fc52, type: 2}
+  - {fileID: 7400000, guid: bda311538e5a9e64fb7e358f6f4ef407, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!114 &114793323763738234
+--- !u!114 &114858255138896162
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -187,7 +192,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1123899366132166}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86ad2181e006034448e08e705f6c92fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 68c8a962c579cbb408161f97890e4d73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Rojo: 1

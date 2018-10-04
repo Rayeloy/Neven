@@ -22,7 +22,7 @@ GameObject:
   m_Layer: 0
   m_Name: Prisma_Largo
   m_TagString: Untagged
-  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -37,9 +37,9 @@ GameObject:
   - component: {fileID: 33035224830482582}
   - component: {fileID: 23089819839410220}
   - component: {fileID: 65335015721333038}
-  - component: {fileID: 114687119606104346}
   - component: {fileID: 111137781168095936}
   - component: {fileID: 108454836721023216}
+  - component: {fileID: 114182820591131350}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -178,11 +178,14 @@ Animation:
   - {fileID: 7400000, guid: a1e26bb9fcdd50f49a18e0f111c04227, type: 2}
   - {fileID: 7400000, guid: dbf05d977b7f0d64bb86d9b1de06d83b, type: 2}
   - {fileID: 7400000, guid: d8a155fd494da3f49a1bc655f83e58c7, type: 2}
+  - {fileID: 7400000, guid: f4a0a15a41b31a84ab30af077ddbf513, type: 2}
+  - {fileID: 7400000, guid: 80e75aaba36621a4f8ca929c4cc14f57, type: 2}
+  - {fileID: 7400000, guid: 16b66d7f86393434d815ef615e632b1c, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!114 &114687119606104346
+--- !u!114 &114182820591131350
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -190,7 +193,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1839809010619304}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86ad2181e006034448e08e705f6c92fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 68c8a962c579cbb408161f97890e4d73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Rojo: 1
@@ -199,4 +202,4 @@ MonoBehaviour:
   Verde: 1
   Naranja: 1
   Morado: 1
-  anim: {fileID: 0}
+  anim: {fileID: 111137781168095936}
